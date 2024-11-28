@@ -1,0 +1,26 @@
+.card {
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}
+
+.card_body {
+    padding: 1rem;
+}
+
+.card_title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.card_description {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
