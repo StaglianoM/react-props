@@ -1,7 +1,11 @@
 import PostCard from '../PostCard/PostCard'
 import style from './Main.module.css'
+import posts from '../../data/posts';
 
+/* stampo solo i post published */
 export default function Main() {
+    const publishedPosts = posts.filter(post => post.published);
+
     return (
         <main>
             <section className={style.section}>
@@ -10,21 +14,21 @@ export default function Main() {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-3">
-                            <PostCard />
-                        </div>
-                        <div className="col-3">
-                            <PostCard />
-                        </div>
-                        <div className="col-3">
-                            <PostCard />
-                        </div>
-                        <div className="col-3">
-                            <PostCard />
-                        </div>
+
+                        {publishedPosts.map(post => (
+                            <div key={post.id} className="col-3">
+                                <PostCard
+                                    title={post.title}
+                                    tags={post.tags}
+                                    image={post.image}
+                                    content={post.content}
+                                />
+                            </div>
+
+                        ))}
                     </div>
                 </div>
             </section>
         </main>
-    )
+    );
 }

@@ -1,21 +1,21 @@
-/**
- * Alcuni post dovranno rimanere senza immagine, quindi avere la proprietà image = undefined
- */
+import PostIt from '../assets/post.jpg';
+import PostIt2 from '../assets/post2.jpg';
+
 
 export const posts = [
 	{
 		id: 1,
-		title: 'Titolo del Post',
-		image: '' /* compila questo campo */,
+		title: 'Titolone',
+		image: PostIt,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
-		tags: ['html', 'css'],
+		tags: ['html', 'css', 'js', 'react'],
 		published: true,
 	},
 	{
 		id: 2,
-		title: 'Titolo del Post',
-		image: '' /* compila questo campo */,
+		title: 'Titolo',
+		image: PostIt2,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
 		tags: ['js', 'css'],
@@ -23,7 +23,7 @@ export const posts = [
 	},
 	{
 		id: 3,
-		title: 'Titolo del Post',
+		title: 'Titolino',
 		image: '' /* compila questo campo */,
 		content:
 			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit animi unde quasi enim non esse ratione voluptas voluptate, officiis veritatis magni blanditiis possimus nobis cum id inventore corporis deserunt hic.',
@@ -40,3 +40,5 @@ export const posts = [
 		published: false,
 	},
 ]
+
+export default posts;
