@@ -10,16 +10,18 @@ export default function Main() {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className="col-4">
+                        <div className="col-3">
                             <PostCard />
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
                             <PostCard />
                         </div>
-                        <div className="col-4">
+                        <div className="col-3">
                             <PostCard />
                         </div>
-
+                        <div className="col-3">
+                            <PostCard />
+                        </div>
                     </div>
                 </div>
             </section>
