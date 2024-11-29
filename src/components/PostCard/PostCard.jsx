@@ -1,17 +1,14 @@
 import Button from '../Button/Button';
 import style from './PostCard.module.css'
 import PropTypes from 'prop-types';
-
+import placeholder from '../../assets/card600.jpg';
 
 export default function PostCard({ title, tags, image, content }) {
     return (
         <div className={style.card}>
-            {/* Se l'immagine esiste stampa, altrimenti sezione vuota */}
-            {image ? (
-                <img className={style.image} src={image} alt={title} />
-            ) : (
-                <div className={style.no_image}>Nessuna immagine</div>
-            )}
+            {/* Se l'immagine esiste stampa, altrimenti stampo placeholder(img no available) */}
+
+            <img className={style.image} src={image || placeholder} alt={title} />
 
             <div className={style.card_body}>
                 <h3 className={style.card_title}>{title}</h3>

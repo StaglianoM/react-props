@@ -10,7 +10,7 @@
     border-radius: 2rem;
 }
 
-.no_image {
+/* .no_image {
     width: 100%;
     height: 200px;
     background-color: #f0f0f0;
@@ -19,7 +19,7 @@
     align-items: center;
     font-size: 1.5rem;
     border-radius: 0.5rem;
-}
+} */
 
 .card_body {
     padding: 1rem;
