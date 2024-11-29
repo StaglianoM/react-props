@@ -12,7 +12,6 @@ export default function PostCard({ title, tags, image, content }) {
 
             <div className={style.card_body}>
                 <h3 className={style.card_title}>{title}</h3>
-                <p className={style.card_description}>{content}</p>
 
 
                 <div className={style.tags}>
@@ -42,6 +41,7 @@ export default function PostCard({ title, tags, image, content }) {
                             </span>
                         );
                     })}
+                    <p className={style.card_description}>{content}</p>
                 </div>
 
 
